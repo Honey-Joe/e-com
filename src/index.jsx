@@ -10,6 +10,7 @@ import Landing from "./components/Landing/Landing";
 import About from "./components/About/About";
 import Ourcycle from "./components/Ourcycle/Ourcycle";
 import News from "./components/News/News";
+import { Analytics } from "@vercel/analytics/react"
 
 
 const Applayout= () =>{
@@ -20,6 +21,7 @@ const Applayout= () =>{
             <Body></Body>
             <Outlet></Outlet>
             <Footer></Footer>
+            <Analytics></Analytics>
         </>
     )
 }
