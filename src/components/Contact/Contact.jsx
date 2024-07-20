@@ -43,7 +43,7 @@ const Contact = () => {
                     <p className='text-red-500'>{errors?.phn_no?.message}</p>
                 </div>
                 <div>
-                    <textarea name="message" id="mess" placeholder='Message'  className='w-[100%]  rounded-2xl p-5 placeholder:text-black font-[Poppins] font-medium' rows={5} {...register("message")}></textarea>
+                    <textarea name="message" id="mess" placeholder='Message'  className='w-[100%]  rounded-2xl p-5 placeholder:text-black font-[Poppins] font-medium' rows={5} {...register("messagetext")}></textarea>
                     <p className='text-red-500'>{errors?.messagetext?.message}</p>
                 </div>
                 <div className='flex justify-center'>
