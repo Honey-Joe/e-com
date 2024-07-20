@@ -7,7 +7,7 @@ const Contact = () => {
     const schema = z.object({
         name: z.string().min(1, { message: 'Required' }),
         email: z.string().min().email(),
-        phn_no: z.string().min(10),
+        phn_no: z.string().min(10 ,{message:"please enter correct phone number"}),
         messagetext:z.string().min()
       });
   
