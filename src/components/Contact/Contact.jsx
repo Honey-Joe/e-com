@@ -32,19 +32,19 @@ const Contact = () => {
             <form action="" className='w-[90%] flex flex-col gap-5' onSubmit={handleSubmit(onSubmit) }>
                 <div>
                     <input type="text" name="name" id="name" placeholder='Name' className='w-[100%] h-[55px] rounded-2xl p-5 placeholder:text-black font-[Poppins] font-medium' {...register("name")}/>
-                    <p>{errors?.name?.message}</p>
+                    <p className='text-red-500'>*{errors?.name?.message}</p>
                 </div>
                 <div>
                     <input type="email" name="email" id="email" placeholder='Email' className='w-[100%] h-[55px] rounded-2xl p-5 placeholder:text-black font-[Poppins] font-medium'{...register("email")} />
-                    <p>{errors?.email?.message}</p>
+                    <p className='text-red-500'>*{errors?.email?.message}</p>
                 </div>
                 <div>
                     <input type="tel" name="phn_no" id="phn_no" placeholder='Phone Number'  className='w-[100%] h-[55px] rounded-2xl p-5 placeholder:text-black font-[Poppins] font-medium' {...register("phn_no")}/>
-                    <p>{errors?.phn_no?.message}</p>
+                    <p className='text-red-500'>*{errors?.phn_no?.message}</p>
                 </div>
                 <div>
                     <textarea name="message" id="mess" placeholder='Message'  className='w-[100%]  rounded-2xl p-5 placeholder:text-black font-[Poppins] font-medium' rows={5} {...register("message")}></textarea>
-                    <p>{errors?.messagetext?.message}</p>
+                    <p className='text-red-500'>*{errors?.messagetext?.message}</p>
                 </div>
                 <div className='flex justify-center'>
                     <button type='submit' className='bg-[#F7C17B] text-white font-[Poppins] rounded-md px-10 py-3 hover:bg-white hover:text-black hover:-translate-y-3'>SEND</button>
