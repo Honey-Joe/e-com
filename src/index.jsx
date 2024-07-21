@@ -11,6 +11,8 @@ import About from "./components/About/About";
 import Ourcycle from "./components/Ourcycle/Ourcycle";
 import News from "./components/News/News";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 
 
 const Applayout= () =>{
@@ -22,6 +24,8 @@ const Applayout= () =>{
             <Outlet></Outlet>
             <Footer></Footer>
             <Analytics></Analytics>
+            <SpeedInsights></SpeedInsights>
+            
         </>
     )
 }
